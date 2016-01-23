@@ -32,11 +32,18 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Compile Include="bin\www" />
+    <Compile Include="httpHandler.js" />
+    <Compile Include="render.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\route.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="views\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
