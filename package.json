@@ -1,0 +1,13 @@
+﻿{
+  "name": "ProperErrorHandlingJavaScript",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Proper ErrorHandling in JavaScript",
+  "author": {
+    "name": "C R",
+    "email": "reyesc@gmail.com"
+  },
+  "scripts": {
+    "start": "node ./bin/www"
+  }
+}
