@@ -42,10 +42,16 @@
     <Compile Include="routes\index.js" />
     <Compile Include="routes\route.js" />
     <Compile Include="tests\routes\index.request.js">
-      <SubType>Code</SubType>
-      <TestFramework>Mocha</TestFramework>
       <Publish>False</Publish>
     </Compile>
+    <Compile Include="tests\scripts\badHandler.test.js">
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="tests\scripts\error.test.js">
+      <Publish>False</Publish>
+    </Compile>
+    <Content Include="scripts\badHandler.js" />
+    <Content Include="scripts\error.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="views\index.html" />
@@ -53,8 +59,10 @@
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="engines\" />
+    <Folder Include="scripts\" />
     <Folder Include="tests\" />
     <Folder Include="routes\" />
+    <Folder Include="tests\scripts\" />
     <Folder Include="tests\routes\" />
     <Folder Include="views\" />
   </ItemGroup>

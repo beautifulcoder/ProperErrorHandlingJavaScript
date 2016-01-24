@@ -25,7 +25,7 @@
                 eqnull: true,
                 funcscope: true
             },
-            all: ['*.js', 'bin/www', 'routes/*.js', 'tests/**/*.js']
+            all: ['*.js', 'bin/www', 'engines/*.js', 'routes/*.js', 'tests/**/*.js']
         }
     });
 
