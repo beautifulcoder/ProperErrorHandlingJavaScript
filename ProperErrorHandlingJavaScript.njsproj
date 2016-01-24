@@ -35,8 +35,10 @@
     <Compile Include="gruntfile.js">
       <Publish>False</Publish>
     </Compile>
-    <Compile Include="httpHandler.js" />
-    <Compile Include="render.js" />
+    <Compile Include="bin\www" />
+    <Compile Include="engines\engine.js" />
+    <Compile Include="engines\httpHandler.js" />
+    <Compile Include="engines\render.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\route.js" />
     <Compile Include="tests\routes\index.request.js">
@@ -50,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="engines\" />
     <Folder Include="tests\" />
     <Folder Include="routes\" />
     <Folder Include="tests\routes\" />

@@ -1,9 +1,8 @@
-﻿var render = require('../render');
-var httpHandler = require('../httpHandler');
+﻿var engine = require('../engines/engine');
 
 function getIndex(res) {
     var req = { path: 'views/index.html', type: 'text/html' };
-    render(res, req, httpHandler);
+    engine.render(res, req, engine.httpHandler);
 }
 
 module.exports = getIndex;
