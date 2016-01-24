@@ -2,7 +2,8 @@
 var httpHandler = require('../httpHandler');
 
 function getIndex(res) {
-    render(res, 'views/index.html', 'text/html', httpHandler);
+    var req = { path: 'views/index.html', type: 'text/html' };
+    render(res, req, httpHandler);
 }
 
 module.exports = getIndex;

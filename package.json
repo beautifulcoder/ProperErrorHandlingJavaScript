@@ -7,7 +7,12 @@
     "name": "C R",
     "email": "reyesc@gmail.com"
   },
-  "scripts": {
-    "start": "node ./bin/www"
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.12.0",
+    "grunt-simple-mocha": "^0.4.1",
+    "mocha": "^2.3.4",
+    "should": "^8.2.0",
+    "supertest": "^1.1.0"
   }
 }

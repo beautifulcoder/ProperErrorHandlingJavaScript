@@ -32,17 +32,27 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Compile Include="bin\www" />
+    <Compile Include="gruntfile.js">
+      <Publish>False</Publish>
+    </Compile>
     <Compile Include="httpHandler.js" />
     <Compile Include="render.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\route.js" />
+    <Compile Include="tests\routes\index.request.js">
+      <SubType>Code</SubType>
+      <TestFramework>Mocha</TestFramework>
+      <Publish>False</Publish>
+    </Compile>
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="views\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="tests\" />
     <Folder Include="routes\" />
+    <Folder Include="tests\routes\" />
     <Folder Include="views\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

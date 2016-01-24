@@ -6,6 +6,6 @@
         res.writeHead(200, { 'Content-Type': content.type });
         res.end(content.response);
     }
-};
+}
 
 module.exports = httpHandler;

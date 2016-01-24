@@ -1,8 +1,9 @@
 ﻿var fs = require('fs');
 
-function render(res, path, contentType, fn) {
-    fs.readFile(__dirname + '/' + path, 'utf-8', function (err, content) {
-        fn(err, res, { response: content, type: contentType });
+function render(res, req, fn) {
+    var fullpath = __dirname + '/' + req.path;
+    fs.readFile(fullpath, 'utf-8', function (err, content) {
+        fn(err, res, { response: content, type: req.type });
     });
 }
 
