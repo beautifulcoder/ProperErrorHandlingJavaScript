@@ -41,6 +41,9 @@
     <Compile Include="engines\render.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\route.js" />
+    <Compile Include="tests\engines\httpHandler.test.js">
+      <Publish>False</Publish>
+    </Compile>
     <Compile Include="tests\routes\index.request.js">
       <Publish>False</Publish>
     </Compile>
@@ -50,8 +53,12 @@
     <Compile Include="tests\scripts\error.test.js">
       <Publish>False</Publish>
     </Compile>
+    <Compile Include="tests\scripts\uglyHandler.test.js">
+      <Publish>False</Publish>
+    </Compile>
     <Content Include="scripts\badHandler.js" />
     <Content Include="scripts\error.js" />
+    <Content Include="scripts\uglyHandler.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="views\index.html" />
@@ -62,6 +69,7 @@
     <Folder Include="scripts\" />
     <Folder Include="tests\" />
     <Folder Include="routes\" />
+    <Folder Include="tests\engines\" />
     <Folder Include="tests\scripts\" />
     <Folder Include="tests\routes\" />
     <Folder Include="views\" />

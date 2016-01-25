@@ -1,7 +1,7 @@
 ﻿var target = require('../../scripts/badHandler');
 var should = require('should');
 
-describe('A bad handler', function() {
+describe('A bad error handler', function() {
     it('returns a value without errors', function() {
         var fn = function() {
             return 1;

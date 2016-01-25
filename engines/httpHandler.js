@@ -1,7 +1,7 @@
-﻿function httpHandler (err, res, content) {
+﻿function httpHandler(err, res, content) {
     if (err) {
         res.writeHead(500, { 'Content-Type': 'text/plain' });
-        res.end('An error has occured: ' + err.message);
+        res.end('Error: ' + err.message);
     } else {
         res.writeHead(200, { 'Content-Type': content.type });
         res.end(content.response);
