@@ -41,10 +41,14 @@
     <Compile Include="engines\render.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\route.js" />
+    <Compile Include="routes\script.js" />
     <Compile Include="tests\engines\httpHandler.test.js">
       <Publish>False</Publish>
     </Compile>
     <Compile Include="tests\routes\index.request.js">
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="tests\routes\script.request.js">
       <Publish>False</Publish>
     </Compile>
     <Compile Include="tests\scripts\badHandler.test.js">

@@ -1,3 +1,11 @@
 ﻿var index = require('./index');
+var script = require('./script');
 
-module.exports = { getIndex: index };
+function route(req, res) {
+    if (script(req, res)) {
+    } else {
+        index(res);
+    }
+}
+
+module.exports = route;

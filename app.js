@@ -2,7 +2,7 @@
 var route = require('./routes/route');
 
 var app = http.createServer(function (req, res) {
-    route.getIndex(res);
+    route(req, res);
 });
 
 module.exports = app;
