@@ -3,7 +3,11 @@
         res.writeHead(500, { 'Content-Type': 'text/plain' });
         res.end('Error: ' + err.message);
     } else {
-        res.writeHead(200, { 'Content-Type': content.type });
+        var headers = { 'Content-Type': content.type };
+        if (content.nocache) {
+            headers['Cache-Control'] = 'no-cache';
+        }
+        res.writeHead(200, headers);
         res.end(content.response);
     }
 }

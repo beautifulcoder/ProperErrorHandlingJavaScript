@@ -15,6 +15,13 @@ describe('An HTTP engine', function () {
         res.getResult().should.equal('200typemessage');
     });
 
+    it('handles responses with no-cache', function () {
+        var res = responseMock();
+        var content = { type: 'type', response: 'message', nocache: true };
+        target(null, res, content);
+        res.getResult().should.equal('200typeno-cachemessage');
+    });
+
     function responseMock() {
         var result = '';
 
@@ -24,8 +31,13 @@ describe('An HTTP engine', function () {
             getResult: getResult
         };
 
-        function writeHead(returnCode, header) {
-            result += returnCode + header['Content-Type'];
+        function writeHead(returnCode, headers) {
+            result += returnCode;
+            for (var prop in headers) {
+                if (headers.hasOwnProperty(prop)) {
+                    result += headers[prop];
+                }
+            }
         }
 
         function end(body) {
