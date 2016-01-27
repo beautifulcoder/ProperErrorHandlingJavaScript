@@ -42,6 +42,12 @@
     <Compile Include="routes\index.js" />
     <Compile Include="routes\route.js" />
     <Compile Include="routes\script.js" />
+    <Content Include="scripts\badHandler.dom.js" />
+    <Content Include="scripts\badHandler.js" />
+    <Content Include="scripts\error.js" />
+    <Content Include="scripts\properHandler.dom.js" />
+    <Content Include="scripts\uglyHandler.dom.js" />
+    <Content Include="scripts\uglyHandler.js" />
     <Compile Include="tests\engines\httpHandler.test.js">
       <Publish>False</Publish>
     </Compile>
@@ -60,9 +66,6 @@
     <Compile Include="tests\scripts\uglyHandler.test.js">
       <Publish>False</Publish>
     </Compile>
-    <Content Include="scripts\badHandler.js" />
-    <Content Include="scripts\error.js" />
-    <Content Include="scripts\uglyHandler.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="views\index.html" />
