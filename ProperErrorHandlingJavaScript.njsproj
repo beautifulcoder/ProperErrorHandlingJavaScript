@@ -45,6 +45,8 @@
     <Content Include="scripts\badHandler.dom.js" />
     <Content Include="scripts\badHandler.js" />
     <Content Include="scripts\error.js" />
+    <Content Include="scripts\errorHandler.dom.js" />
+    <Content Include="scripts\errorAjaxHandler.dom.js" />
     <Content Include="scripts\properHandler.dom.js" />
     <Content Include="scripts\uglyHandler.dom.js" />
     <Content Include="scripts\uglyHandler.js" />
