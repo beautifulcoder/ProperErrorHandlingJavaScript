@@ -55,6 +55,9 @@
     <Compile Include="tests\engines\httpHandler.test.js">
       <Publish>False</Publish>
     </Compile>
+    <Compile Include="tests\engines\response.mock.js">
+      <Publish>False</Publish>
+    </Compile>
     <Compile Include="tests\routes\index.request.js">
       <Publish>False</Publish>
     </Compile>
