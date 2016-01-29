@@ -38,8 +38,10 @@
     <Compile Include="bin\www" />
     <Compile Include="engines\engine.js" />
     <Compile Include="engines\httpHandler.js" />
+    <Compile Include="engines\readPostData.js" />
     <Compile Include="engines\render.js" />
     <Compile Include="routes\index.js" />
+    <Compile Include="routes\log.js" />
     <Compile Include="routes\route.js" />
     <Compile Include="routes\script.js" />
     <Content Include="scripts\badHandler.dom.js" />
@@ -54,6 +56,9 @@
       <Publish>False</Publish>
     </Compile>
     <Compile Include="tests\routes\index.request.js">
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="tests\routes\log.request.js">
       <Publish>False</Publish>
     </Compile>
     <Compile Include="tests\routes\script.request.js">
