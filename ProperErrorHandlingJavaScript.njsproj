@@ -44,6 +44,8 @@
     <Compile Include="routes\log.js" />
     <Compile Include="routes\route.js" />
     <Compile Include="routes\script.js" />
+    <Content Include="scripts\asyncHandler.dom.js" />
+    <Content Include="scripts\asyncHandler.js" />
     <Content Include="scripts\badHandler.dom.js" />
     <Content Include="scripts\badHandler.js" />
     <Content Include="scripts\error.js" />
@@ -65,6 +67,9 @@
       <Publish>False</Publish>
     </Compile>
     <Compile Include="tests\routes\script.request.js">
+      <Publish>False</Publish>
+    </Compile>
+    <Compile Include="tests\scripts\asyncHandler.test.js">
       <Publish>False</Publish>
     </Compile>
     <Compile Include="tests\scripts\badHandler.test.js">
