@@ -1,4 +1,4 @@
-﻿window.addEventListener('error', function (err) {
-    var error = err.error;
+﻿window.addEventListener('error', function (e) {
+    var error = e.error;
     console.log(error);
 });

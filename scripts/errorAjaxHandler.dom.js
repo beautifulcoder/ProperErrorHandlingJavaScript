@@ -1,6 +1,6 @@
-﻿window.addEventListener('error', function (err) {
-    var stack = err.error.stack;
-    var message = err.error.toString();
+﻿window.addEventListener('error', function (e) {
+    var stack = e.error.stack;
+    var message = e.error.toString();
     if (stack) {
         message += '\n' + stack;
     }
