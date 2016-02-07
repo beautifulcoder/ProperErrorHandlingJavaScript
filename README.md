@@ -2,7 +2,7 @@
 
 To run:
 
-    grunt
-    node bin/www
+    npm test
+    npm start
 
-Make sure `grunt-cli` has been intalled as a global npm package.
+Or, type up `node www/bin`.

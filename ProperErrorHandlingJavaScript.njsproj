@@ -32,9 +32,6 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Compile Include="bin\www" />
-    <Compile Include="gruntfile.js">
-      <Publish>False</Publish>
-    </Compile>
     <Compile Include="bin\www" />
     <Compile Include="engines\engine.js" />
     <Compile Include="engines\httpHandler.js" />
