@@ -11,7 +11,7 @@ Camilo Reyes explains the best practices for proper error handling in JavaScript
 1. Clone repo
 2. Run `npm install`
 3. Run `npm start`
-4. Visit http://localhost:1337/
+4. Visit [http://localhost:1337/](http://localhost:1337/)
 5. Run `npm test` to run unit tests
 
 ## License
