@@ -80,7 +80,9 @@
     </Compile>
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Content Include="views\index.html" />
+    <Content Include="views\index.html">
+      <Publish>True</Publish>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
@@ -91,7 +93,25 @@
     <Folder Include="tests\engines\" />
     <Folder Include="tests\scripts\" />
     <Folder Include="tests\routes\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\mocha\" />
+    <Folder Include="typings\node\" />
+    <Folder Include="typings\should\" />
+    <Folder Include="typings\superagent\" />
+    <Folder Include="typings\supertest\" />
     <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\mocha\mocha.d.ts" />
+    <TypeScriptCompile Include="typings\node\node.d.ts" />
+    <TypeScriptCompile Include="typings\node\node.d.ts" />
+    <TypeScriptCompile Include="typings\node\node.d.ts" />
+    <TypeScriptCompile Include="typings\should\should.d.ts" />
+    <TypeScriptCompile Include="typings\superagent\superagent.d.ts" />
+    <TypeScriptCompile Include="typings\supertest\supertest.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />

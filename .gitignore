@@ -1,9 +1,12 @@
 ﻿*.suo
-.ntvs_analysis.dat
-.ntvs_analysis.dat.tmp
+.vs/
+*.DotSettings.user
 
 # Build results
 [Oo]bj/
 *.dll
 
 node_modules
+
+tsd.json
+typings/
