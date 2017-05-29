@@ -22,5 +22,8 @@
   "node": true,
   "browser": true,
   "mocha": true,
+  "globals": {
+    "Promise": true
+  },
   "-W100": true
 }

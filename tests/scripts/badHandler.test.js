@@ -1,4 +1,4 @@
-﻿var target = require('../../scripts/badHandler');
+﻿var badHandler = require('../../scripts/badHandler');
 var should = require('should');
 
 describe('A bad error handler', function() {
@@ -6,7 +6,9 @@ describe('A bad error handler', function() {
         var fn = function() {
             return 1;
         };
-        var result = target(fn);
+
+        var result = badHandler(fn);
+
         result.should.equal(1);
     });
 
@@ -14,7 +16,9 @@ describe('A bad error handler', function() {
         var fn = function() {
             throw Error('random error');
         };
-        var result = target(fn);
+
+        var result = badHandler(fn);
+
         should(result).equal(null);
     });
 });

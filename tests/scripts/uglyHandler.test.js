@@ -1,4 +1,4 @@
-﻿var target = require('../../scripts/uglyHandler');
+﻿var uglyHandler = require('../../scripts/uglyHandler');
 var should = require('should');
 
 describe('An ugly error handler', function () {
@@ -6,7 +6,9 @@ describe('An ugly error handler', function () {
         var fn = function () {
             return 1;
         };
-        var result = target(fn);
+
+        var result = uglyHandler(fn);
+
         result.should.equal(1);
     });
 
@@ -14,8 +16,9 @@ describe('An ugly error handler', function () {
         var fn = function () {
             throw new TypeError('type error');
         };
+
         should.throws(function () {
-            target(fn);
+            uglyHandler(fn);
         }, Error);
     });
 });
