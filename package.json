@@ -8,7 +8,7 @@
     "email": "reyesc@gmail.com"
   },
   "scripts": {
-    "start": "node bin/www",
+    "start": "node bin/www.js",
     "test": "node_modules/.bin/mocha --ui bdd tests/**/*.js"
   },
   "devDependencies": {
