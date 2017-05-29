@@ -2,7 +2,7 @@
 
 var content = {
     response: null,
-    type: 'application/json',
+    type: 'application/json; charset=utf-8',
     nocache: true
 };
 

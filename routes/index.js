@@ -2,7 +2,7 @@
 
 var request = {
     path: 'views/index.html',
-    type: 'text/html',
+    type: 'text/html; charset=utf-8',
     nocache: true
 };
 
