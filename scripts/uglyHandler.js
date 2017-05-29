@@ -2,7 +2,7 @@
     try {
         return fn();
     } catch (e) {
-        throw Error('a new error');
+        throw new Error('a new error');
     }
 }
 
