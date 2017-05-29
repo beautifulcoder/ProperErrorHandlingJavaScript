@@ -1,6 +1,6 @@
 {
   "name": "propererrorhandlingjavascript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "Proper ErrorHandling in JavaScript",
   "author": {
@@ -12,8 +12,8 @@
     "test": "node_modules/.bin/mocha --ui bdd tests/**/*.js"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "should": "^8.2.0",
-    "supertest": "^1.1.0"
+    "mocha": "^3.4.2",
+    "should": "^11.2.1",
+    "supertest": "^3.0.0"
   }
 }
