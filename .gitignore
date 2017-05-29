@@ -1,12 +1,3 @@
-﻿*.suo
-.vs/
-*.DotSettings.user
-
-# Build results
-[Oo]bj/
-*.dll
+﻿.vscode
 
 node_modules
-
-tsd.json
-typings/
