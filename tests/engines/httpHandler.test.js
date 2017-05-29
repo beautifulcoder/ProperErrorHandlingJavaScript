@@ -1,12 +1,11 @@
 ﻿var target = require('../../engines/httpHandler');
 var response = require('./response.mock');
-var should = require('should');
 
 describe('An HTTP engine', function () {
     it('handles errors', function () {
         var res = response();
         target({ message: 'error' }, res);
-        res.getResult().should.equal('500text/plainError: error');
+        res.getResult().should.equal('500text/plain; charset=utf-8Error: error');
     });
 
     it('handles responses', function () {
