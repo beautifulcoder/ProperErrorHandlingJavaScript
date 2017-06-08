@@ -1,7 +1,9 @@
 ﻿function asyncHandler(fn) {
-    setTimeout(function () {
-        fn();
-    }, 1);
+    try {
+        setTimeout(function () {
+            fn();
+        }, 1);
+    } catch (e) { }
 }
 
 if (typeof module === 'object') {
